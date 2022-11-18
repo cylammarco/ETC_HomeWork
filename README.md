@@ -1,5 +1,12 @@
 # Build a HAWKI ETC
 
+Current implementation is not installable, but the struture is as close to installable as possible. The test, shell and example script can only run at the top level directory (where you find this script).
+
+It only works when there is internet connection because of the sky brightness calculation.
+
+Explicit third-party dependencies: `astropy`,  `hmbp`, `matplotlib`, `numpy` and `scopesim`.
+
+
 ### User Story:
 
 *Kieran wants to study the initial mass function of an open cluster in the Large Magellanic Cloud.
