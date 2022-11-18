@@ -1,0 +1,5 @@
+astropy
+hmbp
+matplotlib
+numpy
+scopesim
