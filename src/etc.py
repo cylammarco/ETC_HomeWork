@@ -330,7 +330,7 @@ class HawkIExposureTimeCalculator:
         print("")
         print(f"Signal-to-Noise: {self.snr_aper}")
 
-    def plot(self, snr=None):
+    def plot(self, snr=None, savefig=False, filename="etc.png"):
         """Create a basic plot of SNR as a function of birghtness"""
         fig = plt.figure()
         plt.scatter(self.brightness_list, self.snr_aper, s=5, color="black")
@@ -344,5 +344,12 @@ class HawkIExposureTimeCalculator:
         plt.yscale("log")
         plt.tight_layout()
         plt.grid()
+        if savefig:
+            if isinstance(filename, str):
+                plt.savefig(filename)
+            else:
+                raise TypeError(
+                    f"filename has to be a string, {type(filename)} is given."
+                )
         plt.show()
         return fig
