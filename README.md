@@ -13,7 +13,8 @@ It only works when there is internet connection because of the sky brightness ca
 
 Explicit third-party dependencies: `astropy`,  `HowManyPhotons`, `matplotlib`, `numpy` and `scopesim`.
 
-Example ETC output:
+Example ETC output at 50-percentile obsering condition, which has a seeing of 0.8:
+
 ![alt text](https://github.com/cylammarco/ETC_HomeWork/blob/main/etc.png?raw=true)
 
 ### User Story
