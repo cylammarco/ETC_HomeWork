@@ -1,5 +1,5 @@
 astropy
-hmbp
+HowManyPhotons
 matplotlib
 numpy
 scopesim
