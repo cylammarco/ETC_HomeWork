@@ -21,10 +21,11 @@ def main():
 
     # Initialise
     hawki = etc.HawkIExposureTimeCalculator()
-    hawki.set_observing_condition(seeing=1.3)
+    # 50-percentile obsering condition has a seeing of 0.8"
+    hawki.set_observing_condition(seeing=0.8)
     hawki.get_snr(FILTER_NAME, brightness=mag, ndit=NDIT, dit=DIT)
     hawki.print_summary()
-    hawki.plot(snr=[5, 10, 50], savefig=True)
+    hawki.plot(snr=[5], savefig=True)
 
 
 if __name__ == "__main__":
